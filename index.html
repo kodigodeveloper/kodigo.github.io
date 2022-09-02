@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+  <link rel="icon" href="devchallenges.png" />
+  <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+
+  <title>404 page challenge</title>
+
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      box-sizing: border-box;
+      height: 100vh;
+      overflow-y: hidden;
+    }
+
+    .page {
+      margin: 2.5rem;
+      font-style: normal;
+      font-family: monospace;
+    }
+  
+
+    .page-item {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      height: calc(100vh - 200px);
+      justify-content: space-between;
+    }
+    .page-sub-item{
+      margin-left: 2em;
+    }
+
+    .page-item img {
+      width: 40%;
+    }
+
+    .page-item h2 {
+      font-weight: 700;
+      font-size: 5vw;
+      line-height: 90px;
+      letter-spacing: -0.035em
+    }
+
+    .page-item p {
+      font-weight: 300;
+      font-size: 1.5vw;
+      line-height: 30px;
+      letter-spacing: -0.035em
+    }
+
+    .page-item button {
+      font-family: monospace;
+      background-color: #333333;
+      padding: 1.2em 1.8em;
+      color: white;
+      border: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin: 2.5em 0;
+    }
+    .page .footwer{
+        position: absolute;
+        bottom: 0;
+        color: darkgrey;
+    }
+
+    @media (max-width : 770px) {
+      .page-item {
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .page-item img {
+        width: 80%;
+      }
+
+      .page-item h2 {
+
+        font-size: 7vw;
+        line-height: 50px;
+        letter-spacing: -0.035em
+      }
+
+      .page-item p {
+
+        font-size: 3vw;
+        line-height: 20px;
+        letter-spacing: -0.035em
+      }
+    
+
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+    <h2>404 NOT FOUND</h3>
+      <div class="page-item">
+        <img src="Scarecrow.png">
+        <div class="page-sub-item">
+          <h2>I have bad news for you </h2>
+          <p>The page you are looking <br>for might be removed or is <br>temporarily unavailable</p>
+
+          <button>Back to homepage</button>
+        </div>
+      </div>
+      <p class="footwer">Desarrollado por KODIGO DEVELOPER</p>
+  </div>
+</body>
+
+</html>
